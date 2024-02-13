@@ -1,4 +1,5 @@
 
+
 public class Pintura {
     public double cobertura;
 
@@ -7,7 +8,8 @@ public class Pintura {
     }
 
     public double calcularPintura(Forma forma) {
-        return forma.area() / cobertura;
+        double area = forma.area();
+        return area / cobertura;
     }
 
     @Override
